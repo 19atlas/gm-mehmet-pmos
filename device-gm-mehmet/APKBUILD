@@ -19,4 +19,6 @@ package() {
 	devicepkg_package $startdir $pkgname
 }
 
-sha512sums="(run 'pmbootstrap checksum device-gm-mehmet' to fill)"
+sha512sums="
+2ab0ccda95cabc718380bacc549df7eed1249c2494a1f057cb4625623e56b765f74e9277a7b78bcacb55540d6228b3d31130505ce208b368580e3e68e4cbff60  deviceinfo
+"

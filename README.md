@@ -5,7 +5,7 @@ https://wiki.postmarketos.org/wiki/Porting_to_a_new_device
 ## device info:
 - General Mobile E-tab 4 (but it based on samsung)
 - soc: exynos4412
-  
+- more info [here](http://web.archive.org/web/20200217083856/linux-exynos.org/wiki/Samsung_Exynos_4412)
 
 ## ERROR
 ```

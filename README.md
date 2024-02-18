@@ -1,5 +1,9 @@
 # device-gm-mehmet
 PostmarketOS configuration files for General Mobile E-tab 4/willow
-
-Sorunsuz derleniyor ama USB girişinin sorun çıkarması sebebiyle devamını getiremedim.
 https://wiki.postmarketos.org/wiki/Porting_to_a_new_device
+
+## ERROR
+```
+Assembler messages:
+/home/pmos/build/src/Whispermehmet_VE-82c800ec59a0a4acbbbf473591ea4e70eef80c05/arch/arm/mm/proc-v7.S:522: Error: junk at end of line, first unrecognized character is '#'
+```

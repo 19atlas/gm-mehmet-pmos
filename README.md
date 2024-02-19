@@ -12,9 +12,3 @@ https://wiki.postmarketos.org/wiki/Porting_to_a_new_device
 - `CONFIG_MFD_MAX77686=y (regulators confirmed)`
 - it's also mfd
 - more info [here](http://web.archive.org/web/20200217083856/linux-exynos.org/wiki/Samsung_Exynos_4412)
-
-## ERROR
-```
-Assembler messages:
-/home/pmos/build/src/Whispermehmet_VE-82c800ec59a0a4acbbbf473591ea4e70eef80c05/arch/arm/mm/proc-v7.S:522: Error: junk at end of line, first unrecognized character is '#'
-```

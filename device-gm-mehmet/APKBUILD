@@ -7,9 +7,15 @@ url="https://postmarketos.org"
 license="MIT"
 arch="armv7"
 options="!check !archcheck"
-depends="postmarketos-base linux-gm-mehmet mkbootimg mesa-dri-gallium"
+depends="
+	linux-postmarketos-exynos4
+	mkbootimg
+	postmarketos-base
+"
 makedepends="devicepkg-dev"
-source="deviceinfo"
+source="
+	deviceinfo
+"
 
 build() {
 	devicepkg_build $startdir $pkgname
@@ -20,5 +26,5 @@ package() {
 }
 
 sha512sums="
-2ab0ccda95cabc718380bacc549df7eed1249c2494a1f057cb4625623e56b765f74e9277a7b78bcacb55540d6228b3d31130505ce208b368580e3e68e4cbff60  deviceinfo
+b904483f0ebabe32040b3519a651a6d9b949bdc1c788bbb4d334c26532f18abb2249d9cdf52fa6c22c74ba374c39790295014e7bd4939b3d5f587818a82aadd2  deviceinfo
 "

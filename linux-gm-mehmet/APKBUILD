@@ -2,16 +2,31 @@
 # Kernel config based on: arch/arm/configs/(CHANGEME!)
 
 pkgname=linux-gm-mehmet
-pkgver=3.0.40
+pkgver=3.0.101
 pkgrel=0
-pkgdesc="General Mobile E-tab 4 kernel fork"
+pkgdesc="General Mobile E-tab4 kernel fork"
 arch="armv7"
 _carch="arm"
 _flavor="gm-mehmet"
 url="https://kernel.org"
 license="GPL-2.0-only"
 options="!strip !check !tracedeps pmb:cross-native"
-makedepends="bash bc bison devicepkg-dev flex openssl-dev perl sed installkernel bash gmp-dev bc linux-headers elfutils-dev devicepkg-dev gcc6"
+makedepends="
+	bash
+	bc
+	bison
+	devicepkg-dev
+	sed
+	findutils
+	flex
+	openssl-dev
+	gmp-dev
+	elfutils-dev
+	devicepkg-dev
+	perl
+	gcc6
+	linux-headers
+"
 
 if [ "${CC:0:5}" != "gcc6-" ]; then
 	CC="gcc6-$CC"
@@ -22,16 +37,19 @@ fi
 # Source
 _repository="willow"
 _commit="455b3a3cdebc02ad7b6da477851f625b552225ab"
-_config="config-${_flavor}.${arch}"
+_config="config-$_flavor.$arch"
 source="
-	$pkgname-$_commit.tar.gz::https://github.com/tahamsaglam/${_repository}/archive/${_commit}.tar.gz
+	$pkgname-$_commit.tar.gz::https://github.com/tahamsaglam/$_repository/archive/$_commit.tar.gz
 	$_config
+	linux3.4-fix-piggy.gzip.S.patch
+	linux3.4-ARM-8933-1-replace-Sun-Solaris-style-flag-on-section.patch
+	mali400-config-fix.patch
 	03_fix_paranoid_network_disabled.patch
 	99_runtime_pm_gpl.patch
-
+	gcc7-give-up-on-ilog2-const-optimizations.patch
+	gcc8-fix-put-user.patch
+	gcc10-extern_YYLOC_global_declaration.patch
 "
-builddir="$srcdir/${_repository}-${_commit}"
-
 builddir="$srcdir/$_repository-$_commit"
 _outdir="out"
 
@@ -42,15 +60,23 @@ prepare() {
 
 build() {
 	unset LDFLAGS
-	make O="$_outdir" ARCH="$_carch" CC="${CC:-gcc}" \
-		KBUILD_BUILD_VERSION="$((pkgrel + 1 ))-postmarketOS"
+	make -j1 O="$_outdir" ARCH="$_carch" CC="${CC:-gcc}" KBUILD_BUILD_VERSION="$((pkgrel + 1 ))-postmarketOS"
 }
 
 package() {
-	downstreamkernel_package "$builddir" "$pkgdir" "$_carch" "$_flavor" "$_outdir"
+	downstreamkernel_package "$builddir" "$pkgdir" "$_carch" \
+		"$_flavor" "$_outdir"
 }
 
-sha512sums="d01273fee1d26bd0b9667ec75f8412bc32b5cb13f2a2368e39002b0bd5883a3414d2b84df93a8801c181b77d3e4c384b0664486af3148b8e7cea74ad78090dc5  linux-gm-mehmet-455b3a3cdebc02ad7b6da477851f625b552225ab.tar.gz
-db7da9157242007f6217321e68379850d99babf4d139beeb0cc29b60ea9f832d8a238064491741f5bf3df166ee4fc558735cf5f180d5aee8edfc84d43ffeb4f2  config-gm-mehmet.armv7
+sha512sums="
+d01273fee1d26bd0b9667ec75f8412bc32b5cb13f2a2368e39002b0bd5883a3414d2b84df93a8801c181b77d3e4c384b0664486af3148b8e7cea74ad78090dc5  linux-gm-mehmet-455b3a3cdebc02ad7b6da477851f625b552225ab.tar.gz
+02206ba9d5ebe175a24a06c4c0e19ff5a41303f6d8858ea0154da75968a41a888bcd757cb386469291eba34f9f428a300dcb1be42d35f5f1913b8b168f65f37e  config-gm-mehmet.armv7
+080745ca4ecaa804ee1df26ea81975ca93b74372e0c08322a6c481e97807495ae6ceb6cc77653afa24f9f2df45da8ebf8e5de6b06037fbb08e0279877ce42188  linux3.4-fix-piggy.gzip.S.patch
+b14c0033045dd1ec5dd03612d8fb6361c4a0fa3eb54f7e262628d18756456c2e569a437d1b35099a8302577d1e471bbf9222b4b1b30f6578af7e4342a0009815  linux3.4-ARM-8933-1-replace-Sun-Solaris-style-flag-on-section.patch
+4e018d83a1e14e68db9ef893b039774b04c6c71d51958352a7c2798bc9a2e2a97068cd4d4628334d1a1013febc4fcd83e1fa080018b7057306dad7e18ad0b302  mali400-config-fix.patch
 df62e03666313bb03d9a455eac875f170a55d378b6e56b847c1c6ff1ce5cfafcfdf1d7605754ca3c684840ea00357f9ec4c6621f6ff77377132a484b9258f6f7  03_fix_paranoid_network_disabled.patch
-3a389c060d8ad191199cad2c6036929563c2aa62b68e5e6f728707b8d370c4c57e784645ce7568c947a2e28cbbf606a044bc627dafab521451cb63d152f536a4  99_runtime_pm_gpl.patch"
+3a389c060d8ad191199cad2c6036929563c2aa62b68e5e6f728707b8d370c4c57e784645ce7568c947a2e28cbbf606a044bc627dafab521451cb63d152f536a4  99_runtime_pm_gpl.patch
+77eba606a71eafb36c32e9c5fe5e77f5e4746caac292440d9fb720763d766074a964db1c12bc76fe583c5d1a5c864219c59941f5e53adad182dbc70bf2bc14a7  gcc7-give-up-on-ilog2-const-optimizations.patch
+197d40a214ada87fcb2dfc0ae4911704b9a93354b75179cd6b4aadbb627a37ec262cf516921c84a8b1806809b70a7b440cdc8310a4a55fca5d2c0baa988e3967  gcc8-fix-put-user.patch
+2b48f1bf0e3f70703d2cdafc47d5e615cc7c56c70bec56b2e3297d3fa4a7a1321d649a8679614553dde8fe52ff1051dae38d5990e3744c9ca986d92187dcdbeb  gcc10-extern_YYLOC_global_declaration.patch
+"

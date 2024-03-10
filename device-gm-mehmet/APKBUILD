@@ -1,15 +1,21 @@
 # Reference: <https://postmarketos.org/devicepkg>
 pkgname=device-gm-mehmet
-pkgdesc="General Mobile E-tab 4"
+pkgdesc="General Mobile E-tab4"
 pkgver=0.1
 pkgrel=0
 url="https://postmarketos.org"
 license="MIT"
 arch="armv7"
 options="!check !archcheck"
-depends="postmarketos-base linux-gm-mehmet mkbootimg mesa-dri-gallium"
+depends="
+	linux-gm-mehmet
+	mkbootimg
+	postmarketos-base
+"
 makedepends="devicepkg-dev"
-source="deviceinfo"
+source="
+	deviceinfo
+"
 
 build() {
 	devicepkg_build $startdir $pkgname
@@ -20,5 +26,5 @@ package() {
 }
 
 sha512sums="
-2ab0ccda95cabc718380bacc549df7eed1249c2494a1f057cb4625623e56b765f74e9277a7b78bcacb55540d6228b3d31130505ce208b368580e3e68e4cbff60  deviceinfo
+28722fb861d6f6f6adf89ca5daf5d7546f8757556ec0e91266d740d51cd7f05deb091c9146d7c4195ac0efda3380954e167dfd2acd22419b2aec7775831b26bc  deviceinfo
 "

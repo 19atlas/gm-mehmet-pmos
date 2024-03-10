@@ -2,6 +2,11 @@
 PostmarketOS configuration files for General Mobile E-tab 4/willow
 https://wiki.postmarketos.org/wiki/Porting_to_a_new_device
 
+# files
+- `build.prop` is came from rom
+- `exynos4412-mehmet.dts` is for mainline kernel (WIP)
+- `recovery.img` is twrp for etab4
+
 ## device info:
 - General Mobile E-tab 4 (but it based on samsung)
 - soc: exynos4412

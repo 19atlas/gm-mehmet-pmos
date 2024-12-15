@@ -1,0 +1,746 @@
+<6>[    0.000000] c0      0 Initializing cgroup subsys cpu
+<5>[    0.000000] c0      0 Linux version 3.0.40-mehmet (jenkins-k11@jenkinsk11-buildserver) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #1 SMP PREEMPT Fri Feb 14 13:01:05 KST 2014
+<4>[    0.000000] c0      0 CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=10c5387d
+<4>[    0.000000] c0      0 CPU: VIPT nonaliasing data cache, VIPT aliasing instruction cache
+<4>[    0.000000] c0      0 Machine: MEHMET
+<4>[    0.000000] c0      0 Memory policy: ECC disabled, Data cache writealloc
+<4>[    0.000000] c0      0 CPU EXYNOS4412 (id 0xe4412211)
+<7>[    0.000000] c0      0 exynos4_init_clocks: initializing clocks
+<6>[    0.000000] c0      0 S3C24XX Clocks, Copyright 2004 Simtec Electronics
+<3>[    0.000000] c0      0 s3c_register_clksrc: clock audiocdclk has no registers set
+<3>[    0.000000] c0      0 audiocdclk: no parent clock specified
+<3>[    0.000000] c0      0 s3c_register_clksrc: clock armclk has no registers set
+<7>[    0.000000] c0      0 exynos4_setup_clocks: registering clocks
+<7>[    0.000000] c0      0 exynos4_setup_clocks: xtal is 24000000
+<6>[    0.000000] c0      0 EXYNOS4: PLL settings, A=1000000000, M=800000000, E=96000000 V=350000000
+<6>[    0.000000] c0      0 EXYNOS4: ARMCLK=1000000000, DMC=400000000, ACLK200=24000000
+<6>[    0.000000] c0      0 ACLK160=160000000, ACLK133=133333333, ACLK100=100000000
+<6>[    0.000000] c0      0 EXYNOS4: ACLK400=24000000 ACLK266=800000000
+<3>[    0.000000] c0      0 exynos4_epll_set_rate: Invalid Clock EPLL Frequency
+<6>[    0.000000] c0      0 uclk1: source is mout_mpll_user (6), rate is 100000000
+<6>[    0.000000] c0      0 uclk1: source is mout_mpll_user (6), rate is 100000000
+<6>[    0.000000] c0      0 uclk1: source is mout_mpll_user (6), rate is 100000000
+<6>[    0.000000] c0      0 uclk1: source is mout_mpll_user (6), rate is 100000000
+<6>[    0.000000] c0      0 sclk_csis: source is xusbxti (1), rate is 1500000
+<6>[    0.000000] c0      0 sclk_csis: source is xusbxti (1), rate is 1500000
+<6>[    0.000000] c0      0 sclk_cam0: source is xusbxti (1), rate is 1500000
+<6>[    0.000000] c0      0 sclk_cam1: source is xusbxti (1), rate is 1500000
+<6>[    0.000000] c0      0 sclk_fimc: source is xusbxti (1), rate is 1500000
+<6>[    0.000000] c0      0 sclk_fimc: source is xusbxti (1), rate is 1500000
+<6>[    0.000000] c0      0 sclk_fimc: source is xusbxti (1), rate is 1500000
+<6>[    0.000000] c0      0 sclk_fimc: source is xusbxti (1), rate is 1500000
+<6>[    0.000000] c0      0 sclk_fimd: source is mout_mpll_user (6), rate is 400000000
+<6>[    0.000000] c0      0 sclk_fimd: source is xusbxti (1), rate is 1500000
+<6>[    0.000000] c0      0 sclk_mfc: source is mout_mfc0 (0), rate is 50000000
+<6>[    0.000000] c0      0 sclk_g3d: source is mout_g3d0 (0), rate is 50000000
+<6>[    0.000000] c0      0 sclk_pwi: source is xusbxti (1), rate is 1500000
+<3>[    0.000000] c0      0 failed to request GYRO_SENSOR_DRDY
+<3>[    0.000000] c0      0 failed to request GYRO_SENSOR_INT
+<7>[    0.000000] c0      0 On node 0 totalpages: 261888
+<7>[    0.000000] c0      0 free_area_init_node: node 0, pgdat c084d9c0, node_mem_map c102d000
+<7>[    0.000000] c0      0   Normal zone: 1472 pages used for memmap
+<7>[    0.000000] c0      0   Normal zone: 0 pages reserved
+<7>[    0.000000] c0      0   Normal zone: 186944 pages, LIFO batch:31
+<7>[    0.000000] c0      0   HighMem zone: 574 pages used for memmap
+<7>[    0.000000] c0      0   HighMem zone: 72898 pages, LIFO batch:15
+<6>[    0.000000] c0      0 PERCPU: Embedded 7 pages/cpu @c1836000 s6720 r8192 d13760 u32768
+<7>[    0.000000] c0      0 pcpu-alloc: s6720 r8192 d13760 u32768 alloc=8*4096
+<7>[    0.000000] c0      0 pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3
+<4>[    0.000000] c0      0 Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 259842
+<5>[    0.000000] c0      0 Kernel command line: console=ttySAC2,115200n8 androidboot.console=ttySAC2 androidboot.serialno=TXH7BUE3116A03A androidboot.bootloader=WILLOWB0313 tsp_vendor=1 console=ttySAC2,115200 root=/dev/mmcblk0p10
+<6>[    0.000000] c0      0 PID hash table entries: 4096 (order: 2, 16384 bytes)
+<6>[    0.000000] c0      0 Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+<6>[    0.000000] c0      0 Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+<6>[    0.000000] c0      0 Memory: 1023MB = 1023MB total
+<5>[    0.000000] c0      0 Memory: 794476k/794476k available, 253076k reserved, 293888K highmem
+<5>[    0.000000] c0      0 Virtual kernel memory layout:
+<5>[    0.000000] c0      0     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+<5>[    0.000000] c0      0     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+<5>[    0.000000] c0      0     DMA     : 0xfea00000 - 0xffe00000   (  20 MB)
+<5>[    0.000000] c0      0     vmalloc : 0xee800000 - 0xf6000000   ( 120 MB)
+<5>[    0.000000] c0      0     lowmem  : 0xc0000000 - 0xee000000   ( 736 MB)
+<5>[    0.000000] c0      0     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+<5>[    0.000000] c0      0     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+<5>[    0.000000] c0      0       .init : 0xc0008000 - 0xc0042000   ( 232 kB)
+<5>[    0.000000] c0      0       .text : 0xc0042000 - 0xc07d1000   (7740 kB)
+<5>[    0.000000] c0      0       .data : 0xc07d2000 - 0xc084e580   ( 498 kB)
+<5>[    0.000000] c0      0        .bss : 0xc08a6c44 - 0xc09e76b0   (1283 kB)
+<6>[    0.000000] c0      0 SLUB: Genslabs=13, HWalign=32, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+<6>[    0.000000] c0      0 Preemptible hierarchical RCU implementation.
+<6>[    0.000000] c0      0 NR_IRQS:493
+<6>[    0.000000] c0      0 Console: colour dummy device 80x30
+<6>[    0.000000] c0      0 Calibrating delay loop... 1992.29 BogoMIPS (lpj=4980736)
+<6>[    0.045000] c0      0 pid_max: default: 32768 minimum: 301
+<6>[    0.045000] c0      0 Mount-cache hash table entries: 512
+<6>[    0.045000] c0      0 Initializing cgroup subsys debug
+<6>[    0.045000] c0      0 Initializing cgroup subsys cpuacct
+<6>[    0.045000] c0      0 Initializing cgroup subsys freezer
+<6>[    0.045000] c0      0 CPU: Testing write buffer coherency: ok
+<6>[    0.045000] c0      1 L310 cache controller enabled
+<6>[    0.045000] c0      1 l2x0: 16 ways, CACHE_ID 0x4100c4c8, AUX_CTRL 0x7e470001, Cache size: 1048576 B
+<4>[    0.085000] c1      0 CPU1: Booted secondary processor
+<4>[    0.135000] c2      0 CPU2: Booted secondary processor
+<4>[    0.185000] c3      0 CPU3: Booted secondary processor
+<6>[    0.215000] c0      1 Brought up 4 CPUs
+<6>[    0.215000] c0      1 SMP: Total of 4 processors activated (7969.17 BogoMIPS).
+<6>[    0.220000] c0      1 print_constraints: dummy:
+<6>[    0.220000] c0      1 NET: Registered protocol family 16
+<7>[    0.225000] c0      1 mehmet_config_gpio_table
+<4>[    0.225000] c0      1 ADC0_HW[0x1]
+<4>[    0.225000] c0      1 ADC1_HW[0x2]
+<4>[    0.225000] c0      1 ADC2_HW[0x4]
+<4>[    0.225000] c0      1 ADC3_HW[0x0]
+<4>[    0.225000] c0      1 g_mehmet_hw_version[0x7]
+<4>[    0.225000] c0      1 MEHMET HW_VERSION: [MEHMET_HW_VE1]
+<4>[    0.275000] c0      1 AS0260 CAMERA_RESET START___________
+<4>[    0.275000] c0      1 AS0260 CAMERA_RESET END ____________
+<4>[    0.275000] c0      1 brcm_wlan_init: start
+<4>[    0.275000] c0      1 brcm_init_wlan_mem: WIFI MEM Allocated
+<6>[    0.285000] c0      1 exynos4_pmu_init: PMU supports 4412(96)
+<6>[    0.285000] c0      1 S3C Power Management, Copyright 2004 Simtec Electronics
+<6>[    0.285000] c0      1 EXYNOS4: Initializing architecture
+<6>[    0.285000] c0      1 s3c-adc samsung-adc-v4: attached adc driver
+<6>[    0.285000] c0      1 samsung-pd samsung-pd.0: power domain registered
+<6>[    0.285000] c0      1 samsung-pd samsung-pd.1: power domain registered
+<6>[    0.285000] c0      1 samsung-pd samsung-pd.2: power domain registered
+<6>[    0.285000] c0      1 lcd0 disable skip only one time
+<6>[    0.285000] c0      1 samsung-pd samsung-pd.5: power domain registered
+<6>[    0.285000] c0      1 samsung-pd samsung-pd.6: power domain registered
+<6>[    0.285000] c0      1 samsung-pd samsung-pd.7: power domain registered
+<6>[    0.285000] c0      1 s3c24xx-pwm s3c24xx-pwm.1: tin at 100000000, tdiv at 100000000, tin=divclk, base 8
+<6>[    0.285000] c0      1 s5p-sysmmu s5p-sysmmu.1: Initialized for s3c-fimc.0.
+<6>[    0.285000] c0      1 s5p-sysmmu s5p-sysmmu.2: Initialized for s3c-fimc.1.
+<6>[    0.285000] c0      1 s5p-sysmmu s5p-sysmmu.4: Initialized for s3c-fimc.3.
+<6>[    0.285000] c0      1 s5p-sysmmu s5p-sysmmu.5: Initialized for s5p-jpeg.
+<6>[    0.285000] c0      1 s5p-sysmmu s5p-sysmmu.13: Initialized for s3c-mfc.
+<6>[    0.285000] c0      1 s5p-sysmmu s5p-sysmmu.14: Initialized for s3c-mfc.
+<6>[    0.310000] c0      1 bio: create slab <bio-0> at 0
+<5>[    0.310000] c0      1 SCSI subsystem initialized
+<6>[    0.310000] c0      1 usbcore: registered new interface driver usbfs
+<6>[    0.310000] c0      1 usbcore: registered new interface driver hub
+<6>[    0.310000] c0      1 usbcore: registered new device driver usb
+<6>[    0.310000] c0      1 i2c-gpio i2c-gpio.7: using pins 39 (SDA) and 40 (SCL)
+<6>[    0.310000] c0      1 i2c-gpio i2c-gpio.9: using pins 282 (SDA) and 281 (SCL)
+<6>[    0.310000] c0      1 max77686 0-0009: device found
+<6>[    0.310000] c0      1 max77686_irq_init+
+<6>[    0.315000] c0      1 max77686_irq_init-
+<6>[    0.320000] c0      1 print_constraints: vdd_mif range: 850 <--> 1100 mV at 1100 mV
+<6>[    0.320000] c0      1 print_constraints: vdd_arm range: 850 <--> 1500 mV at 1000 mV
+<6>[    0.320000] c0      1 print_constraints: vdd_int range: 850 <--> 1150 mV at 1000 mV
+<6>[    0.320000] c0      1 print_constraints: vdd_g3d range: 850 <--> 1100 mV at 1000 mV
+<6>[    0.320000] c0      1 print_constraints: vdd buck6: 2000 mV
+<6>[    0.325000] c0      1 print_constraints: vdd_in235 range: 3300 mV
+<6>[    0.325000] c0      1 print_constraints: vdd_emmc_2v8 range: 2800 mV
+<6>[    0.325000] c0      1 print_constraints: vdd_alive range: 1000 mV
+<6>[    0.325000] c0      1 print_constraints: vdd_m12 range: 1200 mV
+<6>[    0.325000] c0      1 print_constraints: vdd_io/vdd_bt_wifi_io range: 1800 mV
+<4>[    0.325000] c0      1 rdev_init_debugfs: vdd_io/vdd_bt_wifi_io range: Failed to create debugfs directory
+<6>[    0.325000] c0      1 print_constraints: vdd_sd/vdd_mmc012 range: 1200 <--> 2800 mV at 2800 mV
+<4>[    0.325000] c0      1 rdev_init_debugfs: vdd_sd/vdd_mmc012 range: Failed to create debugfs directory
+<6>[    0.330000] c0      1 print_constraints: vdd_cam_io range: 1800 <--> 1900 mV at 1800 mV
+<6>[    0.330000] c0      1 print_constraints: vdd_tsp_1v8 range: 1800 mV
+<6>[    0.330000] c0      1 print_constraints: vdd_pll range: 1100 mV
+<6>[    0.330000] c0      1 print_constraints: vdd_mipi_1v0 range: 1000 mV
+<6>[    0.330000] c0      1 print_constraints: vdd_gps_1v8 range: 1800 mV
+<6>[    0.330000] c0      1 print_constraints: vdd_mipi_1v8 range: 1800 mV
+<6>[    0.330000] c0      1 print_constraints: vdd_abb_1v8 range: 1950 mV
+<6>[    0.330000] c0      1 print_constraints: vdd_uotg_3v3 range: 3300 mV
+<6>[    0.335000] c0      1 print_constraints: vdd_c2c range: 1800 mV
+<6>[    0.335000] c0      1 print_constraints: vdd_mmc01_1v8 range: 1800 mV
+<6>[    0.335000] c0      1 print_constraints: vdd_uotg_1v0 range: 1000 mV
+<6>[    0.335000] c0      1 print_constraints: vdd_hsic range: 1800 mV
+<6>[    0.335000] c0      1 print_constraints: vdd_cam range: 2800 <--> 2900 mV at 1200 mV
+<6>[    0.335000] c0      1 print_constraints: vdd_gps_2v8 range: 2800 mV
+<6>[    0.335000] c0      1 print_constraints: vdd_cam_core range: 1800 <--> 1900 mV at 1800 mV
+<6>[    0.335000] c0      1 print_constraints: vdd_bt_wifi range: 3300 mV
+<6>[    0.340000] c0      1 print_constraints: vdd_lcd range: 3300 mV
+<6>[    0.340000] c0      1 print_constraints: vdd_sensor range: 3000 mV
+<6>[    0.340000] c0      1 print_constraints: vdd_audio range: 3300 mV
+<6>[    0.340000] c0      1 print_constraints: vdd_tsp range: 3000 <--> 3300 mV at 2700 mV
+<6>[    0.340000] c0      1 print_constraints: 32KHCP_PMIC:
+<6>[    0.340000] c0      1 s3c-i2c s3c2440-i2c.0: i2c-0: S3C I2C adapter
+<6>[    0.340000] c0      1 s3c-i2c s3c2440-i2c.1: i2c-1: S3C I2C adapter
+<6>[    0.340000] c0      1 s3c-i2c s3c2440-i2c.2: i2c-2: S3C I2C adapter
+<6>[    0.340000] c0      1 s3c-i2c s3c2440-i2c.3: i2c-3: S3C I2C adapter
+<6>[    0.340000] c0      1 s3c-i2c s3c2440-i2c.4: i2c-4: S3C I2C adapter
+<6>[    0.340000] c0      1 s3c-i2c s3c2440-i2c.5: i2c-5: S3C I2C adapter
+<6>[    0.345000] c0      1 Advanced Linux Sound Architecture Driver Version 1.0.24.
+<6>[    0.345000] c0      1 Sangoma WANPIPE Router v1.1 (c) 1995-2000 Sangoma Technologies Inc.
+<6>[    0.345000] c0      1 Bluetooth: Core ver 2.16
+<6>[    0.345000] c0      1 NET: Registered protocol family 31
+<6>[    0.345000] c0      1 Bluetooth: HCI device and connection manager initialized
+<6>[    0.345000] c0      1 Bluetooth: HCI socket layer initialized
+<6>[    0.345000] c0      1 Bluetooth: L2CAP socket layer initialized
+<6>[    0.345000] c0      1 Bluetooth: SCO socket layer initialized
+<6>[    0.345000] c0      4 cfg80211: Calling CRDA to update world regulatory domain
+<6>[    0.345000] c0      1 Switching to clocksource mct-frc
+<6>[    0.347897] c0      5 Switched to NOHz mode on CPU #0
+<6>[    0.347906] c1    519 Switched to NOHz mode on CPU #1
+<6>[    0.347915] c2      0 Switched to NOHz mode on CPU #2
+<6>[    0.347924] c3      0 Switched to NOHz mode on CPU #3
+<6>[    0.356281] c0      1 NET: Registered protocol family 2
+<6>[    0.356462] c0      1 IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+<6>[    0.357069] c0      1 TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+<6>[    0.358569] c0      1 TCP bind hash table entries: 65536 (order: 7, 786432 bytes)
+<6>[    0.359402] c0      1 TCP: Hash tables configured (established 131072 bind 65536)
+<6>[    0.359413] c0      1 TCP reno registered
+<6>[    0.359427] c0      1 UDP hash table entries: 512 (order: 2, 16384 bytes)
+<6>[    0.359458] c0      1 UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+<6>[    0.359834] c0      1 NET: Registered protocol family 1
+<6>[    0.359990] c0      1 Trying to unpack rootfs image as initramfs...
+<6>[    0.369151] c0      1 Freeing initrd memory: 176K
+<6>[    0.369235] c0      1 PMU: registered new PMU device of type 0
+<6>[    0.369408] c0      1 Exynos4 : ARM Clock down on idle mode is enabled
+<6>[    0.370806] c0      1 [BT] Bluetooth Power On.
+<6>[    0.425337] c0      1 wake enabled for irq 354
+<6>[    0.425347] c0      1 [BT] Bluetooth Power Off.
+<6>[    0.425610] c0      1 Loaded driver for PL330 DMAC-0 s3c-pl330
+<6>[    0.425622] c0      1     DBUFF-64x8bytes Num_Chans-8 Num_Peri-1 Num_Events-32
+<6>[    0.425914] c0      1 Loaded driver for PL330 DMAC-1 s3c-pl330
+<6>[    0.425926] c0      1     DBUFF-32x4bytes Num_Chans-8 Num_Peri-32 Num_Events-32
+<6>[    0.426021] c0      1 Loaded driver for PL330 DMAC-2 s3c-pl330
+<6>[    0.426032] c0      1     DBUFF-32x4bytes Num_Chans-8 Num_Peri-32 Num_Events-32
+<4>[    0.426792] c0      1 highmem bounce pool size: 64 pages
+<6>[    0.426990] c0      1 ashmem: initialized
+<6>[    0.437163] c0      1 fuse init (API version 7.16)
+<6>[    0.437513] c0      1 msgmni has been set to 978
+<6>[    0.440715] c0      1 NET: Registered protocol family 38
+<6>[    0.440744] c0      1 io scheduler noop registered
+<6>[    0.440753] c0      1 io scheduler deadline registered (default)
+<6>[    0.440816] c0      1 io scheduler cfq registered
+<6>[    0.441954] c0      1 s3cfb s3cfb.0: [fb2] dma: 0x6b8b1000, cpu: 0xee849000, size: 0x00bb8000
+<6>[    0.450783] c0      1 Bootloader sent 'bootloaderfb' : 5F800000
+<6>[    0.451585] c0      1 s3cfb s3cfb.0: registered successfully
+<6>[    0.451946] c0      1 Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+<6>[    0.790281] c0      1 s5pv210-uart.0: ttySAC0 at MMIO 0x13800000 (irq = 16) is a S3C6400/10
+<6>[    0.870069] c0      1 s5pv210-uart.1: ttySAC1 at MMIO 0x13810000 (irq = 20) is a S3C6400/10
+<6>[    0.955065] c0      1 s5pv210-uart.2: ttySAC2 at MMIO 0x13820000 (irq = 24) is a S3C6400/10
+<6>[    2.253104] c0      1 console [ttySAC2] enabled
+<6>[    2.300070] c0      1 s5pv210-uart.3: ttySAC3 at MMIO 0x13830000 (irq = 28) is a S3C6400/10
+<4>[    2.380343] c0      1 Mali: ::Q::exynos_result_of_asv : 0
+<4>[    2.384256] c0      1 Mali: mali_dvfs[0].vol = 950000
+<4>[    2.389377] c0      1 Mali: mali_dvfs[1].vol = 975000
+<4>[    2.394498] c0      1 Mali: mali_runtime_resume.vol = 975000
+<4>[    2.400237] c0      1 Mali: mali_dvfs[2].vol = 1050000
+<4>[    2.405446] c0      1 Mali: mali_dvfs[3].vol = 1100000
+<4>[    2.410653] c0      1 Mali: init_gpu_vol = 1100000
+<4>[    2.415597] c0      1 Mali: Mali frequency 440
+<4>[    2.419931] c0      1 Mali: init_mali_clock mali_clock c0877334
+<4>[    2.426017] c0      1 Mali: = regulator_set_voltage: 1100000, 1100000
+<4>[    2.433045] c0      1 Mali: Mali frequency 440
+<4>[    2.453851] c0      1 Mali: Mali device driver loaded
+<4>[    2.457700] c0      1 UMP: UMP device driver  loaded
+<6>[    2.469086] c0      1 brd: module loaded
+<6>[    2.474850] c0      1 loop: module loaded
+<6>[    2.477401] c0      1 lkdtm: No crash points registered, enable through debugfs
+<6>[    2.484720] c0      1 pmem: 0 init
+<6>[    2.488243] c0      1 pmem_gpu1: 0 init
+<4>[    2.492277] c0      1 [LIGHT] Isl29023 Probe
+<6>[    2.496430] c0      1 input: light as /devices/virtual/input/input0
+<6>[    2.505730] c0      1 PPP generic driver version 2.4.2
+<6>[    2.509645] c0      1 PPP Deflate Compression module registered
+<6>[    2.515310] c0      1 PPP BSD Compression module registered
+<6>[    2.521312] c0      1 PPP MPPE Compression module registered
+<6>[    2.526531] c0      1 NET: Registered protocol family 24
+<6>[    2.531817] c0      1 tun: Universal TUN/TAP device driver, 1.6
+<6>[    2.537697] c0      1 tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+<6>[    2.545033] c0      1 usbcore: registered new interface driver cdc_ether
+<6>[    2.551423] c0      1 ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+<7>[    2.559011] c0      1 usb: set_exynos_usb_phy_tune old phy1 tune=0x2819b3 t=1
+<7>[    2.559032] c0      1 usb: set_exynos_usb_phy_tune new phy1 tune=0x2831b3
+<6>[    2.559047] c0      1 s5p-ehci s5p-ehci: S5P EHCI Host Controller
+<6>[    2.564952] c0      1 s5p-ehci s5p-ehci: new USB bus registered, assigned bus number 1
+<6>[    2.572856] c0      1 s5p-ehci s5p-ehci: irq 134, io mem 0x12580000
+<6>[    2.585046] c0      1 s5p-ehci s5p-ehci: USB 0.0 started, EHCI 1.00
+<6>[    2.590347] c0      1 hub 1-0:1.0: USB hub found
+<6>[    2.594445] c0      1 hub 1-0:1.0: 3 ports detected
+<6>[    2.599716] c0      1 ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+<3>[    2.606419] c0      1 s5p-ohci s5p-ohci: Already power on PHY
+<7>[    2.612071] c0      1 usb: set_exynos_usb_phy_tune old phy1 tune=0x2831b3 t=1
+<7>[    2.612092] c0      1 usb: set_exynos_usb_phy_tune new phy1 tune=0x2831b3
+<6>[    2.612104] c0      1 s5p-ohci s5p-ohci: s5p OHCI
+<6>[    2.616780] c0      1 s5p-ohci s5p-ohci: new USB bus registered, assigned bus number 2
+<6>[    2.624673] c0      1 s5p-ohci s5p-ohci: irq 134, io mem 0x12590000
+<6>[    2.689517] c0      1 hub 2-0:1.0: USB hub found
+<6>[    2.692682] c0      1 hub 2-0:1.0: 3 ports detected
+<6>[    2.697961] c0      1 Initializing USB Mass Storage driver...
+<6>[    2.703417] c0      1 usbcore: registered new interface driver usb-storage
+<6>[    2.710118] c0      1 USB Mass Storage support registered.
+<6>[    2.715833] c0      1 usbcore: registered new interface driver usbserial
+<6>[    2.722269] c0      1 usbserial: USB Serial Driver core
+<6>[    2.727584] c0      1 USB Serial support registered for FTDI USB Serial Device
+<6>[    2.734856] c0      1 usbcore: registered new interface driver ftdi_sio
+<6>[    2.741279] c0      1 ftdi_sio: v1.6.0:USB FTDI Serial Converters Driver
+<6>[    2.748070] c0      1 USB Serial support registered for Moschip 7840/7820 USB Serial Driver
+<6>[    2.756295] c0      1 mos7840: 1.3.2:Moschip 7840/7820 USB Serial Driver
+<6>[    2.763102] c0      1 usbcore: registered new interface driver mos7840
+<6>[    2.769591] c0      1 USB Serial support registered for pl2303
+<6>[    2.775447] c0      1 usbcore: registered new interface driver pl2303
+<6>[    2.781727] c0      1 pl2303: Prolific PL2303 USB to serial adaptor driver
+<6>[    2.788812] c0      1 s3c-udc : S3C HS USB OTG Device Driver,(c) 2008-2009 Samsung Electronics
+<6>[    2.788821] c0      1 s3c-udc : version 15 March 2009
+<6>[    2.804410] c0      1 android_usb gadget: Mass Storage Function, version: 2009/09/11
+<6>[    2.810687] c0      1 android_usb gadget: Number of LUNs=1
+<6>[    2.816153] c0      1  lun0: LUN: removable file: (no medium)
+<6>[    2.822298] c0      1 android_usb gadget: android_usb ready
+<6>[    2.827437] c0      1 Registered gadget driver 'android_usb'
+<3>[    2.833084] c0      1 s3c-usbgadget s3c-usbgadget: Already power on PHY
+<7>[    2.839676] c0      1 usb: set_exynos_usb_phy_tune old phy0 tune=0x2819b3 t=0
+<7>[    2.839697] c0      1 usb: set_exynos_usb_phy_tune new phy0 tune=0x2831b3
+<7>[    2.839707] c0      1 usb: s5p_usb_phy0_tune read original tune
+<7>[    2.839716] c0      1 usb: s5p_usb_phy0_tune save default phytune (0x2831b3)
+<7>[    2.839725] c0      1 usb: s5p_usb_phy0_tune original tune=0x2831b3
+<7>[    2.839734] c0      1 usb: s5p_usb_phy0_tune tune_mask=0x0, tune=0x0
+<7>[    2.839742] c0      1 usb: s5p_usb_phy0_tune default tune
+<4>[    2.840946] c0      1 mousedev: could not register psaux device, error: -16
+<6>[    2.846618] c0      1 mousedev: PS/2 mouse device common for all mice
+<6>[    2.853648] c0      1 input: gpio-keys as /devices/platform/gpio-keys.0/input/input1
+<6>[    2.861240] c0      1 usbcore: registered new interface driver xpad
+<6>[    2.867142] c0      1 usbcore: registered new interface driver usb_acecad
+<6>[    2.873787] c0      1 acecad: v3.2:USB Acecad Flair tablet driver
+<6>[    2.879976] c0      1 usbcore: registered new interface driver aiptek
+<6>[    2.886287] c0      1 aiptek: v2.3 (May 2, 2007):Aiptek HyperPen USB Tablet Driver (Linux 2.6.x)
+<6>[    2.895051] c0      1 aiptek: Bryan W. Headley/Chris Atenasio/Cedric Brun/Rene van Paassen
+<6>[    2.903412] c0      1 usbcore: registered new interface driver gtco
+<4>[    2.909550] c0      1 GTCO usb driver version: 2.00.0006
+<6>[    2.914784] c0      1 usbcore: registered new interface driver hanwang
+<6>[    2.921469] c0      1 usbcore: registered new interface driver kbtab
+<6>[    2.927690] c0      1 kbtab: v0.0.2:USB KB Gear JamStudio Tablet driver
+<6>[    2.934405] c0      1 usbcore: registered new interface driver wacom
+<6>[    2.940623] c0      1 wacom: v1.52:USB Wacom tablet driver
+<4>[    2.946089] c0      1 ==ft5x0x_ts_init==
+<3>[    2.949990] c0      1 regulator_check_voltage: vdd_tsp range: operation not allowed
+<4>[    2.957634] c0      1 [FocalTech] TS_POWER ON
+<4>[    3.601476] c0      1 [FocalTech] INIT RESET ON
+<4>[    3.604656] c0      1 ret=0
+<4>[    4.110044] c0      1 [mxt_init()] Initializing ...
+<6>[    4.113468] c0      1 [ATMEL] config data: HS
+<4>[    4.117803] c0      1 [mxt_probe()] ...
+<6>[    4.121915] c0      1 input: atmel_1664 as /devices/platform/s3c2440-i2c.5/i2c-5/5-004a/input/input2
+<4>[    4.235046] c0      1 [ATMEL] TS_POWER ON___________
+<4>[    4.238533] c0      1 [ATMEL] tsp_vdd1v8 ON___________
+<4>[    4.244086] c0      1 [ATMEL] tsp_vdd3v3 ON___________
+<4>[    4.755730] c0      1 [mxt_init_touch_driver()] family=[0xa2] variant=[0x0] version=[0x20] build=[0xab] matrix X,Y size=[32, 52] objects_len=[33]
+<6>[    4.777518] c0      1 1664s_driver_v13: Finger type = 3
+<4>[    4.792254] c0      1 [mxt_probe()] power detected(1)
+<4>[    4.796136] c0      1 [ATMEL] obj_address=[0x01ab(427)] Config Version=[0x8B(139)]
+<6>[    4.803687] c0      1 >>> read(USER_DATA_T38, addr:428, size:1, value:1)
+<4>[    4.810072] c0      1 [ATMEL] config data version (0x8b -> 0x8b)
+<4>[    4.816059] c0      1 [ATMEL] saved tsp vendor    (HS -> HS)
+<4>[    4.821702] c0      1 [mxt_probe()] x_dropbits=[0] y_dropbits=[2]
+<6>[    5.130044] c0      1 [ATMEL] passive pen disabled
+<4>[    5.140820] c0      1 calibration success !!!
+<4>[    5.144542] c1    871 reset is ongoing
+<4>[    5.147512] c0      1 alps_init: board revision check ok! (upper MVT)
+<6>[    5.154102] c0      1 alps-init: platform_driver_register
+<6>[    5.159539] c0      1 alps-init: platform_device_register_simple
+<6>[    5.165331] c0      1 alps-init: input_allocate_polled_device
+<6>[    5.171297] c0      1 input: alps_compass as /devices/platform/alps_compass/input/input3
+<6>[    5.179314] c0      1 alps-init: input_register_polled_device
+<4>[    5.185028] c0      1 alps-init: misc_register
+<4>[    5.189271] c0      1 alps-init: early_suspend_register
+<6>[    5.194515] c0      1 i2c i2c-7: detected HSCDTD007/008 geomagnetic field sensor
+<4>[    5.202037] c1    871 normal mode
+<4>[    5.213054] c0      1 [HSCD] x:-399 y:316 z:-535
+<6>[    5.220693] c0      1 i2c i2c-4: detected bam150 accelerometer
+<6>[    5.234602] c0      1 max77686_rtc_probe
+<6>[    5.260194] c0      1 max77686-rtc max77686-rtc: max77686_rtc_init_reg: bypass init
+<6>[    5.315854] c0      1 using rtc device, max77686-rtc, for alarms
+<6>[    5.320240] c0      1 max77686-rtc max77686-rtc: rtc core: registered max77686-rtc as rtc0
+<6>[    5.329169] c0      1 i2c /dev entries driver
+<6>[    5.334282] c0      1 Linux media interface: v0.10
+<6>[    5.337869] c0      1 Linux video capture interface: v2.00
+<4>[    5.343511] c0      1 Samsung MIPI-CSIS0 driver probed successfully
+<4>[    5.349498] c0      1 Samsung MIPI-CSIS1 driver probed successfully
+<2>[    5.355839] c0      1 Initialize JPEG driver
+<6>[    5.360243] c0      1 s5p-jpeg s5p-jpeg: JPEG driver is registered to /dev/video12
+<6>[    5.367683] c0      1 s5p-jpeg s5p-jpeg: JPEG driver is registered to /dev/video11
+<6>[    5.375641] c0      1 MFC(Multi Function Codec - FIMV v5.x) registered successfully
+<6>[    5.385411] c0      1 S3C2410 Watchdog Timer, (c) 2004 Simtec Electronics
+<6>[    5.391132] c0      1 s3c2410-wdt s3c2410-wdt: watchdog inactive, reset disabled, irq enabled
+<6>[    5.400007] c0      1 device-mapper: ioctl: 4.20.0-ioctl (2011-02-02) initialised: dm-devel@redhat.com
+<6>[    5.408727] c0      1 Bluetooth: HCI UART driver ver 2.2
+<6>[    5.413828] c0      1 Bluetooth: HCI H4 protocol initialized
+<6>[    5.420028] c0      1 cpuidle: using governor ladder
+<6>[    5.425389] c0      1 cpuidle: using governor menu
+<6>[    5.429286] c0      1 mshci: Mobile Storage Host Controller Interface driver
+<6>[    5.436220] c0      1 mshci: Copyright (c) 2011 Samsung Electronics Co., Ltd
+<6>[    5.443357] c0      1 dw_mmc dw_mmc: clock source 0: sclk_dwmci (400000000 Hz)
+<3>[    5.450690] c0      1 mmc0: Version ID 0x5342240a.
+<6>[    5.455452] c0      1 mmc0: FIFO WMARK FOR RX 0x80 WX 0x40. ###########
+<6>[    5.462241] c0      1 mmc_detect_change(mmc0): wait for 500ms
+<6>[    5.467560] c0      1 mmc0: MSHCI controller on samsung-mshci [dw_mmc] using IDMA
+<6>[    5.475166] c0      1 sdhci: Secure Digital Host Controller Interface driver
+<6>[    5.482048] c0      1 sdhci: Copyright(c) Pierre Ossman
+<6>[    5.487329] c0      1 s3c-sdhci s3c-sdhci.2: clock source 2: sclk_mmc (100000000 Hz)
+<6>[    5.495050] c0      1 mmc1: vmmc regulator found
+<6>[    5.601352] c0      1 mmc_detect_change(mmc1): wait for 500ms
+<6>[    5.605640] c0      1 mmc1: SDHCI controller on samsung-hsmmc [s3c-sdhci.2] using ADMA
+<6>[    5.613698] c0      1 mmc1: card removed.
+<6>[    5.617533] c0      1 mmc_detect_change(mmc1): wait for 500ms
+<6>[    5.623319] c0      1 s3c-sdhci s3c-sdhci.3: clock source 2: sclk_mmc (100000000 Hz)
+<6>[    5.631026] c0      1 mmc2: vmmc regulator found
+<6>[    5.735626] c0      1 mmc_detect_change(mmc2): wait for 500ms
+<6>[    5.739897] c0      1 mmc2: SDHCI controller on samsung-hsmmc [s3c-sdhci.3] using ADMA
+<6>[    5.754640] c0      1 usbcore: registered new interface driver usbhid
+<6>[    5.759619] c0      1 usbhid: USB HID core driver
+<6>[    5.764766] c0      1 logger: created 256K log 'log_main'
+<6>[    5.769845] c0      1 logger: created 256K log 'log_events'
+<6>[    5.775397] c0      1 logger: created 256K log 'log_radio'
+<6>[    5.780874] c0      1 logger: created 256K log 'log_system'
+<6>[    5.788242] c0      1 Samsung Audio Subsystem Driver, (c) 2011 Samsung Electronics
+<6>[    5.794399] c0      1 audss_init: RCLK SRC[busclk]
+<3>[    5.995895] c0      0 mmc0: cmd 52 response timeout error
+<3>[    6.000677] c0      0 mmc0: cmd 52 response timeout error
+<3>[    6.009380] c0      0 mmc0: cmd 8 response timeout error
+<3>[    6.014071] c0      0 mmc0: cmd 5 response timeout error
+<3>[    6.019301] c0      0 mmc0: cmd 5 response timeout error
+<3>[    6.024596] c0      0 mmc0: cmd 5 response timeout error
+<3>[    6.029890] c0      0 mmc0: cmd 5 response timeout error
+<3>[    6.035252] c0      0 mmc0: cmd 55 response timeout error
+<3>[    6.040630] c0      0 mmc0: cmd 55 response timeout error
+<3>[    6.046014] c0      0 mmc0: cmd 55 response timeout error
+<3>[    6.051394] c0      0 mmc0: cmd 55 response timeout error
+<4>[    6.089576] c0      5 mmc0: Voltage range not supported for power class.
+<3>[    6.094810] c0      5 mmc0: power class selection to bus width 8 failed
+<4>[    6.101590] c0      5 mmc0: Voltage range not supported for power class.
+<3>[    6.108093] c0      5 mmc0: power class selection to bus width 8 ddr 2 failed
+<6>[    6.115499] c0      5 mmc0: new high speed DDR MMC card at address 0001
+<6>[    6.122283] c0      5 mmcblk0: mmc0:0001 016G92 14.6 GiB
+<6>[    6.127342] c0      5 mmcblk0boot0: mmc0:0001 016G92 partition 1 4.00 MiB
+<6>[    6.134110] c0      5 mmcblk0boot1: mmc0:0001 016G92 partition 2 4.00 MiB
+<6>[    6.143936] c0      5  mmcblk0: p1 p2 p3 p4 < p5 p6 p7 p8 p9 p10 >
+<6>[    6.151721] c0      5  mmcblk0boot1: unknown partition table
+<6>[    6.157205] c0      5  mmcblk0boot0: unknown partition table
+<4>[    6.305376] c0      1 wm8985 1-001a: ASoC: Failed to create Speaker-L/R debugfs file
+<4>[    6.311657] c0      1 wm8985 1-001a: ASoC: Failed to create HP-L/R debugfs file
+<6>[    6.320843] c0      1 asoc: wm8985-hifi <-> samsung-i2s.0 mapping ok
+<6>[    6.327223] c0      1 asoc: bcm4334-pcm <-> samsung-pcm.1 mapping ok
+<6>[    6.333178] c0      1 jack_mgr_probe : Registering jack driver
+<6>[    6.338335] c0      1 wake enabled for irq 366
+<6>[    6.342482] c0      1 ALSA device list:
+<6>[    6.346170] c0      1   #0: mehmet
+<6>[    6.349643] c0      1 GACT probability NOT on
+<6>[    6.353901] c0      1 Mirror/redirect action on
+<6>[    6.358407] c0      1 u32 classifier
+<6>[    6.361964] c0      1     Actions configured
+<6>[    6.366219] c0      1 Netfilter messages via NETLINK v0.30.
+<6>[    6.371814] c0      1 nf_conntrack version 0.5.0 (12416 buckets, 49664 max)
+<6>[    6.379609] c0      1 ctnetlink v0.93: registering with nfnetlink.
+<6>[    6.384911] c0      1 NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+<6>[    6.392724] c0      1 NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+<6>[    6.399865] c0      1 xt_time: kernel timezone is -0000
+<6>[    6.405825] c0      1 ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    6.410897] c0      1 arp_tables: (C) 2002 David S. Miller
+<6>[    6.416268] c0      1 TCP cubic registered
+<6>[    6.421247] c0      1 NET: Registered protocol family 10
+<6>[    6.427775] c0      1 Mobile IPv6
+<6>[    6.429637] c0      1 ip6_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    6.436096] c0      1 IPv6 over IPv4 tunneling driver
+<6>[    6.444633] c0      1 NET: Registered protocol family 17
+<6>[    6.448505] c0      1 NET: Registered protocol family 15
+<5>[    6.453941] c0      1 Bridge firewalling registered
+<6>[    6.458847] c0      1 NET: Registered protocol family 4
+<6>[    6.463986] c0      1 Bluetooth: RFCOMM TTY layer initialized
+<6>[    6.469582] c0      1 Bluetooth: RFCOMM socket layer initialized
+<6>[    6.475567] c0      1 Bluetooth: RFCOMM ver 1.11
+<6>[    6.480163] c0      1 Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+<6>[    6.486324] c0      1 Bluetooth: BNEP filters: protocol multicast
+<6>[    6.492400] c0      1 Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+<6>[    6.499354] c0      1 NET: Registered protocol family 35
+<6>[    6.504552] c0      1 802.1Q VLAN Support v1.8
+<6>[    6.508910] c0      1 lib80211: common routines for IEEE802.11 drivers
+<7>[    6.515404] c0      1 lib80211_crypt: registered algorithm 'NULL'
+<5>[    6.515414] c0      1 Registering the dns_resolver key type
+<6>[    6.521079] c0      1 batman_adv: B.A.T.M.A.N. advanced next (compatibility version 12) loaded
+<6>[    6.529553] c0      1 EXYNOS4X12: Adaptive Support Voltage init
+<6>[    6.535456] c0      1 EXYNOS4X12(SG):  ORIG : 2 MOD : 0 RESULT : 2
+<6>[    6.541615] c0      1 VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+<6>[    6.550122] c0      1 ThumbEE CPU extension supported.
+<5>[    6.555252] c0      1 Registering SWP/SWPB emulation handler
+<6>[    6.560891] c0      1 DVFS : VDD_ARM Voltage table set with 2 Group
+<6>[    6.567134] c0      1 CPUFREQ L0 : 0 uV
+<6>[    6.570953] c0      1 CPUFREQ L1 : 0 uV
+<6>[    6.574761] c0      1 CPUFREQ L2 : 1300000 uV
+<6>[    6.579112] c0      1 CPUFREQ L3 : 1237500 uV
+<6>[    6.583452] c0      1 CPUFREQ L4 : 1200000 uV
+<6>[    6.587792] c0      1 CPUFREQ L5 : 1150000 uV
+<6>[    6.592132] c0      1 CPUFREQ L6 : 1100000 uV
+<6>[    6.596472] c0      1 CPUFREQ L7 : 1050000 uV
+<6>[    6.600812] c0      1 CPUFREQ L8 : 1000000 uV
+<6>[    6.605152] c0      1 CPUFREQ L9 : 975000 uV
+<6>[    6.609395] c0      1 CPUFREQ L10 : 962500 uV
+<6>[    6.613745] c0      1 CPUFREQ L11 : 950000 uV
+<6>[    6.618085] c0      1 CPUFREQ L12 : 950000 uV
+<6>[    6.622425] c0      1 CPUFREQ L13 : 925000 uV
+<6>[    6.626765] c0      1 CPUFREQ L14 : 900000 uV
+<6>[    6.631714] c0      1 ** temperature set value **
+<6>[    6.631720] c0      1 Throttling stop_temp  = 82  start_temp     = 85
+<6>[    6.631726] c0      1 Waring stop_temp      = 102 start_tmep     = 105
+<6>[    6.631732] c0      1 Tripping temp         = 110
+<6>[    6.631737] c0      1 Hw_tripping temp      = 113
+<6>[    6.631742] c0      1 Mem throttle stop_temp= 80, start_temp     = 85
+<6>[    6.631748] c0      1 Trhottling freq = 800000   Warning freq = 200000
+<6>[    6.671054] c0      1 TC_voltage stop_temp = 13  Start_temp = 10
+<6>[    6.677028] c0      1 @@@ get_refresh_interval = 0x2e
+<6>[    6.682071] c0      1 @@@ get_refresh_interval = 0x5d
+<6>[    6.687095] c0      1 exynos_tmu_init: cpufreq_level[13], busfreq_value[0]
+<6>[    6.694963] c0      1 Tmu Initialization is sucessful...!
+<4>[    6.700645] c0      1 regulator_init_complete: vdd_sensor range: incomplete constraints, leaving on
+<4>[    6.708517] c0      1 regulator_init_complete: vdd_lcd range: incomplete constraints, leaving on
+<4>[    6.717759] c0      1 regulator_init_complete: vdd_hsic range: incomplete constraints, leaving on
+<4>[    6.726151] c0      1 regulator_init_complete: vdd_uotg_1v0 range: incomplete constraints, leaving on
+<4>[    6.735352] c0      1 regulator_init_complete: vdd_mmc01_1v8 range: incomplete constraints, leaving on
+<4>[    6.744624] c0      1 regulator_init_complete: vdd_c2c range: incomplete constraints, leaving on
+<4>[    6.753406] c0      1 regulator_init_complete: vdd_uotg_3v3 range: incomplete constraints, leaving on
+<4>[    6.762606] c0      1 regulator_init_complete: vdd_abb_1v8 range: incomplete constraints, leaving on
+<4>[    6.771720] c0      1 regulator_init_complete: vdd_mipi_1v8 range: incomplete constraints, leaving on
+<4>[    6.781075] c0      1 regulator_init_complete: vdd_mipi_1v0 range: incomplete constraints, leaving on
+<4>[    6.790105] c0      1 regulator_init_complete: vdd_pll range: incomplete constraints, leaving on
+<4>[    6.799043] c0      1 regulator_init_complete: vdd_sd/vdd_mmc012 range: incomplete constraints, leaving on
+<4>[    6.808524] c0      1 regulator_init_complete: vdd_m12 range: incomplete constraints, leaving on
+<4>[    6.817291] c0      1 regulator_init_complete: vdd_in235 range: incomplete constraints, leaving on
+<4>[    6.826231] c0      1 regulator_init_complete: vdd buck6: incomplete constraints, leaving on
+<4>[    6.834636] c0      1 regulator_init_complete: vdd_int range: incomplete constraints, leaving on
+<4>[    6.843417] c0      1 regulator_init_complete: vdd_arm range: incomplete constraints, leaving on
+<4>[    6.852183] c0      1 regulator_init_complete: vdd_mif range: incomplete constraints, leaving on
+<4>[    6.860994] c0      1 wifi_set_power = 1
+<4>[    6.864674] c0      1 brcm_wlan_power Enter: power on
+<4>[    6.869722] c0      1 gpio_table = [2]
+<4>[    6.873848] c0      1 WLAN: GPIO_WLAN_EN = 1
+<4>[    6.877971] c0      1 wifi_set_carddetect = 1
+<4>[    6.882320] c0      1 gpio_table = [7]
+<6>[    6.886244] c0      1 mmc_detect_change(mmc2): wait for 500ms
+<6>[    6.892148] c0      1 mmc2: card inserted.
+<6>[    6.896025] c0      1 mmc_detect_change(mmc2): wait for 500ms
+<4>[    7.488271] c0      5 mmc2: queuing unknown CIS tuple 0x80 (2 bytes)
+<4>[    7.499872] c0      5 mmc2: queuing unknown CIS tuple 0x80 (3 bytes)
+<4>[    7.511480] c0      5 mmc2: queuing unknown CIS tuple 0x80 (3 bytes)
+<4>[    7.528475] c0      5 mmc2: queuing unknown CIS tuple 0x80 (7 bytes)
+<4>[    7.554855] c0      5 mmc2: queuing unknown CIS tuple 0x80 (14 bytes)
+<4>[    7.565207] c0      5 mmc2: queuing unknown CIS tuple 0x80 (2 bytes)
+<6>[    7.829188] c0      5 mmc2: new high speed SDIO card at address 0001
+<4>[    7.834788] c0      1 alloc static buf at df200000!
+<4>[    7.839208] c0      1 dhdsdio_probe : no mutex held. set lock
+<4>[    7.844791] c0      1 F1 signature read @0x18000000=0x16034334
+<4>[    7.854801] c0      1 DHD: dongle ram size is set to 524288(orig 524288)
+<4>[    7.861286] c0      1 wl_create_event_handler thr:444 created
+<6>[    7.861298] c2   1092 CFG80211-ERROR) wl_event_handler : tsk Enter, tsk = 0xdf762d88
+<4>[    7.876000] c0      1 p2p0: P2P Interface Registered
+<4>[    7.879560] c0      1 dhd_attach thr:44a created
+<4>[    7.884165] c0      1 dhd_attach thr:44b created
+<4>[    7.888766] c0      1 dhd_attach thr:44c created
+<4>[    7.893422] c0      1 wifi_get_mac_addr
+<4>[    7.899399] c0      1 Broadcom Dongle Host Driver: register interface [wlan0] MAC: 00:00:00:00:00:00
+<4>[    7.907072] c0      1 dhdsdio_probe : the lock is released.
+<4>[    7.912765] c0      1
+<4>[    7.912770] c0      1 Dongle Host Driver, version 1.28.19.4 (r)
+<4>[    7.912776] c0      1 Compiled in drivers/net/wireless/bcmdhd/src on Feb 14 2014 at 13:00:53
+<4>[    7.929291] c0      1 wifi_set_power = 0
+<4>[    7.933194] c0      1 brcm_wlan_power Enter: power off
+<4>[    7.938315] c0      1 gpio_table = [2]
+<4>[    7.942225] c0      1 WLAN: GPIO_WLAN_EN = 0
+<4>[    7.946558] c0      1 =========== WLAN placed in RESET ========
+<6>[    7.953077] c0      1 exynos_usb_switch: Exynos USB Switch Driver
+<6>[    7.980394] c0      1 max77686-rtc max77686-rtc: setting system clock to 2024-12-15 06:02:11 UTC (1734242531)
+<7>[    7.988904] c0      1 ctrl->mem.size = 0x2f76000
+<7>[    7.988913] c0      1 ctrl->mem.base = 0x6893b000
+<6>[    7.989266] c0      1 FIMC0 registered successfully
+<7>[    7.993797] c0      1 ctrl->mem.size = 0x2000000
+<7>[    7.993805] c0      1 ctrl->mem.base = 0x6599b000
+<6>[    7.994046] c0      1 FIMC1 registered successfully
+<7>[    7.998654] c0      1 ctrl->mem.size = 0xfa0000
+<7>[    7.998663] c0      1 ctrl->mem.base = 0x6799b000
+<6>[    7.998905] c0      1 FIMC3 registered successfully
+<6>[    8.003849] c0      1 Freeing init memory: 232K
+<4>[    8.017472] c1      1 init (1): /proc/1/oom_adj is deprecated, please use /proc/1/oom_score_adj instead.
+<3>[    8.126991] c1      1 init: cannot open '/initlogo.rle'
+<3>[    8.316878] c3   1548 s3c2410-wdt s3c2410-wdt: timeout 30 too big
+<3>[    8.321537] c3   1548 init: watchdogd: Failed to set timeout to 30: Invalid argument
+<3>[    8.329284] c3   1548 init: watchdogd: Adjusted interval to timeout returned by driver: timeout 15, interval 1, margin 20
+<6>[    8.331731] c2   1549 EXT4-fs (mmcblk0p3): mounted filesystem with writeback data mode. Opts: (null)
+<6>[    8.353064] c2   1549 EXT4-fs (mmcblk0p9): mounted filesystem with ordered data mode. Opts: (null)
+<6>[    8.365600] c2   1549 EXT4-fs (mmcblk0p8): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=panic
+<7>[    8.382536] c2   1549 EXT4-fs (mmcblk0p10): ext4_orphan_cleanup: deleting unreferenced inode 220933
+<7>[    8.382971] c2   1549 EXT4-fs (mmcblk0p10): ext4_orphan_cleanup: deleting unreferenced inode 221052
+<7>[    8.383571] c2   1549 EXT4-fs (mmcblk0p10): ext4_orphan_cleanup: deleting unreferenced inode 221011
+<7>[    8.386590] c2   1549 EXT4-fs (mmcblk0p10): ext4_orphan_cleanup: deleting unreferenced inode 213057
+<7>[    8.389369] c2   1549 EXT4-fs (mmcblk0p10): ext4_orphan_cleanup: deleting unreferenced inode 213043
+<6>[    8.389777] c2   1549 EXT4-fs (mmcblk0p10): 5 orphan inodes deleted
+<6>[    8.394584] c2   1549 EXT4-fs (mmcblk0p10): recovery complete
+<6>[    8.414907] c2   1549 EXT4-fs (mmcblk0p10): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=remount-ro
+<6>[    8.445827] c1    906 MFC F/W loaded successfully (size: 360008)
+<6>[    8.460089] c2   1549 fs_mgr: Running /system/bin/e2fsck on /dev/block/mmcblk0p10
+<6>[    8.507885] c0   1549 EXT4-fs (mmcblk0p10): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,noauto_da_alloc,errors=panic
+<3>[    8.547507] c0      1 init: cannot find '/system/bin/rild', disabling 'ril-daemon'
+<3>[    8.568652] c0      1 android_usb: already disabled
+<3>[    8.572556] c0      1 android_usb: already disabled
+<6>[    8.579218] c1   1577 warning: `adbd' uses 32-bit capabilities (legacy support in use)
+<6>[    8.586121] c1   1578 adb_open
+<6>[    8.588706] c1   1578 mtp_bind_config
+<6>[    8.592432] c1   1578 adb_bind_config
+<3>[    8.629915] c2      1 init: untracked pid 1579 exited
+<4>[    8.823454] c2   1639 Mali: mem_usage before 1569 : 8388608
+<6>[    8.853382] c0    913 android_work: sent uevent USB_STATE=CONNECTED
+<6>[    8.858487] c2   1639 s3cfb s3cfb.0: [fb0] dma: 0x6c469000, cpu: 0xefbff000, size: 0x007d0000
+<4>[    8.871619] c2   1639 s3c-fimc3: FIMC3 1 opened.
+<6>[    8.884559] c2   1639 s3cfb s3cfb.0: [fb2] already in                             FB_BLANK_UNBLANK
+<4>[    8.950891] c1   1700 Mali: mem_usage before 1680 : 8650752
+<6>[    8.992895] c0   1572 android_usb gadget: high speed config #1: android
+<6>[    8.998395] c0    913 android_work: sent uevent USB_STATE=CONFIGURED
+<4>[    9.096566] c0   1700 Mali: Mali frequency 440
+<4>[    9.620106] c0      5 Mali: Mali frequency 160
+<4>[    9.623080] c0      5 Mali: = regulator_set_voltage: 950000, 950000
+<6>[   17.623844] c0   1879 request_suspend_state: wakeup (3->0) at 17623828718 (2024-12-15 06:02:21.137885254 UTC)
+<6>[   18.123646] c0   1879 acc_open
+<6>[   18.125893] c0   1879 acc_release
+<4>[   18.209330] c1   1934
+<4>[   18.209339] c1   1934 Dongle Host Driver, version 1.28.19.4 (r)
+<4>[   18.209344] c1   1934 Compiled in drivers/net/wireless/bcmdhd/src on Feb 14 2014 at 13:00:53
+<4>[   18.224598] c1   1934 wl_android_wifi_on in
+<4>[   18.228765] c1   1934 wifi_set_power = 1
+<4>[   18.232662] c1   1934 brcm_wlan_power Enter: power on
+<4>[   18.237710] c1   1934 gpio_table = [2]
+<4>[   18.241820] c1   1934 WLAN: GPIO_WLAN_EN = 1
+<4>[   18.245941] c1   1934 =========== WLAN going back to live  ========
+<4>[   18.252191] c1   1934 sdio_reset_comm():
+<4>[   18.363372] c0   1934 dhdsdio_write_vars: Download, Upload and compare of NVRAM succeeded.
+<4>[   18.642459] c0   1934 dhd_bus_init: enable 0x06, ready 0x06 (waited 0us)
+<6>[   18.648332] c0   1934 wake enabled for irq 355
+<4>[   18.654681] c0   1934 dhd_wlfc_init(): successfully disabled bdcv2 tlv signaling, 0
+<4>[   18.661141] c0   1934 wifi_get_mac_addr
+<4>[   18.663271] c3   1880 Mali: mem_usage before 1866 : 413138944
+<4>[   18.673174] c0   1934 Firmware up: op_mode=0x0005, Broadcom Dongle Host Driver mac=44:39:c4:42:bf:fb
+<4>[   18.694507] c0   1934 Firmware version = wl0: Nov 14 2012 14:53:03 version 6.10.58.82P (B2) FWID 01-200
+<6>[   18.704004] c0   1934 CFG80211-ERROR) wl_cfg80211_attach_post : p2p0: p2p_dev_addr=46:39:c4:42:bf:fb
+<4>[   19.296630] c3   1942 Mali: mem_usage before 1942 : 438566912
+<6>[   19.591714] c0   2007 mtp_open
+<4>[   20.062805] c3   2070 Mali: mem_usage before 2070 : 488636416
+<4>[   20.760081] c2     21 Mali: = regulator_set_voltage: 975000, 975000
+<4>[   20.766150] c2     21 Mali: Mali frequency 266
+<4>[   20.956130] c2   1934 dhd_wl_ioctl: WLC_IOCTL: cmd: 23, ret = -17
+<4>[   20.990481] c3   2017 select 2202 (ndroid.settings), adj 9, size 4802, to kill
+<4>[   20.996300] c3   2017 send sigkill to 2202 (ndroid.settings), adj 9, size 4802
+<4>[   21.057085] c2   1092 wl_bss_connect_done succeeded with 94:28:6f:26:69:cd
+<4>[   21.069434] c2   1092 wl_bss_connect_done succeeded with 94:28:6f:26:69:cd
+<4>[   21.219722] c1   2017 select 2007 (d.process.media), adj 5, size 4846, to kill
+<4>[   21.225551] c1   2017 send sigkill to 2007 (d.process.media), adj 5, size 4846
+<6>[   21.252559] c0   2097 mtp_release
+<4>[   21.495165] c0     21 Mali: Mali frequency 160
+<4>[   21.498141] c0     21 Mali: = regulator_set_voltage: 950000, 950000
+<4>[   21.513846] c2   2234 select 2099 (rocess.location), adj 2, size 4537, to kill
+<4>[   21.519681] c2   2234 send sigkill to 2099 (rocess.location), adj 2, size 4537
+<6>[   21.625760] c2   1934 CFG80211-TRACE) wl_cfg80211_set_btcoex_dhcp : wl_cfg80211_set_btcoex_dhcp: DHCP session starts
+<4>[   21.675911] c0   2092 select 2112 (.location.fused), adj 2, size 4225, to kill
+<4>[   21.681780] c0   2092 send sigkill to 2112 (.location.fused), adj 2, size 4225
+<3>[   22.403416] c2      1 init: sys_prop: permission denied uid:1003  name:service.bootanim.exit
+<3>[   24.735375] c2   1099 qtaguid: iface_stat: stat_update() wlan0 not found
+<3>[   24.880459] c2   1099 qtaguid: iface_stat: stat_update() wlan0 not found
+<6>[   25.277711] c2   1934 CFG80211-TRACE) wl_cfg80211_set_btcoex_dhcp : wl_cfg80211_set_btcoex_dhcp: DHCP is complete
+<4>[   26.126007] c2   1942 Mali: = regulator_set_voltage: 975000, 975000
+<4>[   26.132017] c0   1942 Mali: Mali frequency 266
+<6>[   26.305172] c3   1922 binder: 1866:1922 transaction failed 29189, size 100-4
+<6>[   26.474034] c3   2365 mtp_open
+<4>[   26.635122] c0      5 Mali: Mali frequency 160
+<4>[   26.638092] c0      5 Mali: = regulator_set_voltage: 950000, 950000
+<4>[   29.592727] c1   1942 Mali: = regulator_set_voltage: 975000, 975000
+<4>[   29.598458] c0   1942 Mali: Mali frequency 266
+<7>[   29.670054] c2   2167 p2p0: no IPv6 routers present
+<4>[   30.100169] c0   1022 Mali: Mali frequency 160
+<4>[   30.103144] c0   1022 Mali: = regulator_set_voltage: 950000, 950000
+<6>[   34.321068] c1    871 [ATMEL] PEN MODE END(4294914160)
+<4>[   34.336505] c1   1942 Mali: = regulator_set_voltage: 975000, 975000
+<4>[   34.342498] c1   1942 Mali: Mali frequency 266
+<6>[   34.522496] c2   2592 qtaguid: ctrl_untag(u -1): failed to lookup sock_fd=-1 err=-9 pid=2592 tgid=2499 uid=10005
+<6>[   34.948200] c2   2619 qtaguid: ctrl_untag(u -1): failed to lookup sock_fd=-1 err=-9 pid=2619 tgid=2499 uid=10005
+<4>[   35.150144] c1   1022 Mali: Mali frequency 160
+<4>[   35.153115] c1   1022 Mali: = regulator_set_voltage: 950000, 950000
+<6>[   35.287086] c3   2921 request_suspend_state: sleep (0->3) at 35287064852 (2024-12-15 06:02:42.377559045 UTC)
+<4>[   35.302334] c0   1022 mxt_early_suspend  mxt_enabled=1
+<6>[   35.306513] c0   1022 1664s_driver_v13: mxt_early_suspend
+<4>[   35.324739] c0   1022 [ATMEL] TS_POWER OFF ___________
+<4>[   35.329872] c0   1022 dhd_early_suspend: enter
+<4>[   35.333304] c0   1022 dhd_set_suspend: force extra Suspend setting
+<4>[   35.347224] c2   1022 dhd_get_suspend_bcn_li_dtim bcn_li_dtim=3 DTIM=1 Listen=10
+<7>[   35.364669] c2   1022 s3cfb - disable power domain
+<3>[   35.923487] c0   2269 CPU_DOWN 1
+<5>[   36.010892] c0   2269 CPU1: shutdown
+<3>[   36.013551] c0   2269 CPU_DOWN 2
+<5>[   36.180820] c0   2269 CPU2: shutdown
+<3>[   36.183605] c0   2269 CPU_DOWN 3
+<5>[   36.271871] c0   2269 CPU3: shutdown
+<6>[   46.595940] c0   2593 qtaguid: ctrl_untag(u -1): failed to lookup sock_fd=-1 err=-9 pid=2593 tgid=2499 uid=10005
+
+<6>[   88.081051] c0   1022  pwm backlight  on
+<4>[   88.085532] c0   1022 dhd_late_resume: enter
+<4>[   88.090998] c0   1022 dhd_set_suspend: Remove extra suspend setting
+<4>[   88.114227] c0   1022 mxt_late_resume  mxt_enabled=0
+<6>[   88.118430] c0   1022 1664s_driver_v13: mxt_late_resume
+<4>[   88.127491] c0   1022 [ATMEL] TS_POWER ON___________
+<4>[   88.134041] c0   1022 [ATMEL] tsp_vdd1v8 ON___________
+<4>[   88.141075] c0   1022 [ATMEL] tsp_vdd3v3 ON___________
+<4>[   88.250118] c0   3037 Mali: Mali frequency 160
+<4>[   88.253081] c0   3037 Mali: = regulator_set_voltage: 950000, 950000
+<3>[   88.295060] c0    913 [HOTPLUG IN] check_up 1400000>=500000 && 300>100
+<3>[   88.303367] c0    913 CPU_UP 3
+<4>[   88.321450] c3      0 CPU3: Booted secondary processor
+<6>[   88.345031] c3      0 Switched to NOHz mode on CPU #3
+<4>[   88.450058] c0   3037 Mali: = regulator_set_voltage: 975000, 975000
+<6>[   88.455042] c0   1022 [ATMEL] passive pen disabled
+<4>[   88.460334] c3   3037 Mali: Mali frequency 266
+<4>[   88.472411] c3   1022 calibration success !!!
+<4>[   88.476202] c0    871 reset is ongoing
+<4>[   88.480468] c0    871 calibration is on going !!
+<4>[   88.497058] c0    871 normal mode
+<4>[   88.950156] c0   3037 Mali: Mali frequency 160
+<4>[   88.953166] c0   3037 Mali: = regulator_set_voltage: 950000, 950000
+<4>[   89.006112] c0   1934 dhd_wl_ioctl: WLC_SET_VAR: pkt_filter_add, ret = -2
+<4>[   89.050204] c0   1022 Mali: = regulator_set_voltage: 975000, 975000
+<4>[   89.057557] c0   1022 Mali: Mali frequency 266
+<4>[   90.713087] c3   1942 Mali: Mali frequency 266
+<4>[   92.722713] c3   1942 Mali: Mali frequency 266
+<4>[   92.825467] c3      5 Mali: Mali frequency 160
+<4>[   92.828471] c3      5 Mali: = regulator_set_voltage: 950000, 950000
+<6>[  161.160718] c2   1092 CFG80211-ERROR) wl_is_linkdown : Link down Reason : WLC_E_DEAUTH
+<6>[  161.168601] c2   1092 CFG80211-ERROR) wl_is_linkdown : Link down Reason : WLC_E_DEAUTH
+<6>[  161.176555] c2   1092 CFG80211-ERROR) wl_is_linkdown : Link down Reason : WLC_E_DEAUTH
+<6>[  161.184396] c2   1092 CFG80211-ERROR) wl_is_linkdown : Link down Reason : WLC_E_DEAUTH
+<4>[  161.226808] c0   1934 wl_android_wifi_off in
+<6>[  161.234369] c0   1934 wake disabled for irq 355
+<4>[  161.237656] c0   1934 wifi_set_power = 0
+<4>[  161.241547] c0   1934 brcm_wlan_power Enter: power off
+<4>[  161.246669] c0   1934 gpio_table = [2]
+<4>[  161.250569] c0   1934 WLAN: GPIO_WLAN_EN = 0
+<4>[  161.254701] c0   1934 =========== WLAN placed in RESET ========
+<4>[  188.010929] c3   3623 WLAN: GPIO_WLAN_EN = 1
+<4>[  188.015061] c3   3623 =========== WLAN going back to live  ========
+<4>[  188.021321] c3   3623 sdio_reset_comm():
+<4>[  188.041992] c0   3623 F1 signature read @0x18000000=0x16034334
+<4>[  188.049628] c0   3623 DHD: dongle ram size is set to 524288(orig 524288)
+<4>[  188.116896] c0   3623 dhdsdio_write_vars: Download, Upload and compare of NVRAM succeeded.
+<4>[  188.393738] c0   3623 dhd_bus_init: enable 0x06, ready 0x06 (waited 0us)
+<6>[  188.399160] c0   3623 wake enabled for irq 355
+<4>[  188.404558] c0   3623 wifi_get_mac_addr
+<4>[  188.409110] c0   3623 Firmware up: op_mode=0x0005, Broadcom Dongle Host Driver mac=44:39:c4:42:bf:fb
+<4>[  188.423247] c0   3623 Firmware version = wl0: Nov 14 2012 14:53:03 version 6.10.58.82P (B2) FWID 01-200
+<6>[  188.431979] c0   3623 CFG80211-ERROR) wl_cfg80211_attach_post : p2p0: p2p_dev_addr=46:39:c4:42:bf:fb
+<4>[  188.700696] c0   2269 [BATTERY] old_soc=96 soc=96, vcell=4100000uV, dc=true, usb=true
+<4>[  190.000057] c3   1022 Mali: = regulator_set_voltage: 975000, 975000
+<4>[  190.005657] c0   1022 Mali: Mali frequency 266
+<4>[  190.612310] c3   3623 dhd_wl_ioctl: WLC_IOCTL: cmd: 23, ret = -17
+<4>[  190.712328] c0   1092 wl_bss_connect_done succeeded with 94:28:6f:26:69:cd
+<4>[  190.735367] c0   1092 wl_bss_connect_done succeeded with 94:28:6f:26:69:cd
+<6>[  190.833124] c0   3623 CFG80211-TRACE) wl_cfg80211_set_btcoex_dhcp : wl_cfg80211_set_btcoex_dhcp: DHCP session starts
+<4>[  191.000132] c3   1022 Mali: Mali frequency 160
+<4>[  191.003098] c3   1022 Mali: = regulator_set_voltage: 950000, 950000
+<6>[  191.773207] c0   3623 CFG80211-TRACE) wl_cfg80211_set_btcoex_dhcp : wl_cfg80211_set_btcoex_dhcp: DHCP is complete
+<4>[  194.873966] c3   1942 Mali: = regulator_set_voltage: 975000, 975000
+<4>[  194.890191] c0   1942 Mali: Mali frequency 266
+<4>[  195.106105] c0   3623 dhd_wl_ioctl: WLC_SET_VAR: pkt_filter_add, ret = -2
+<4>[  195.496790] c0   3623 dhd_wl_ioctl: WLC_SET_VAR: pkt_filter_add, ret = -2
+<4>[  197.889979] c0   1942 Mali: Mali frequency 266
+<4>[  197.990403] c0   1022 Mali: Mali frequency 160
+<4>[  197.993407] c0   1022 Mali: = regulator_set_voltage: 950000, 950000
+<7>[  198.710107] c0      0 p2p0: no IPv6 routers present
+<4>[  203.120320] c3   2409 Mali: = regulator_set_voltage: 975000, 975000
+<4>[  203.125848] c0   2409 Mali: Mali frequency 266

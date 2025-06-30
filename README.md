@@ -17,5 +17,9 @@ https://wiki.postmarketos.org/wiki/Porting_to_a_new_device
 - `CONFIG_MFD_MAX77686=y (regulators confirmed)` also rtc
 - Ram: 774 MB `40000000-7fefffff : System RAM`
 - detected HSCDTD007/008 geomagnetic field sensor
+- `s3cfb`
+- `max77686`
+- pcpu-alloc: s6720 r8192 d13760 u32768 alloc=8*4096
+- root partition /dev/mmcblk0p10
 - more info [in postmarket wiki](https://wiki.postmarketos.org/index.php?title=User:Knuxify/Scratchpad&oldid=56232)
 - more info cpu [here](http://web.archive.org/web/20200217083856/linux-exynos.org/wiki/Samsung_Exynos_4412)

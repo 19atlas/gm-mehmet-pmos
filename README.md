@@ -23,6 +23,7 @@ https://wiki.postmarketos.org/wiki/Porting_to_a_new_device
 - root partition /dev/mmcblk0p10
 
 ## device partition:
+```
 Filesystem                Size      Used Available Use% Mounted on
 tmpfs                   388.1M      8.0K    388.1M   0% /dev
 tmpfs                   388.1M     16.0K    388.1M   0% /tmp
@@ -32,6 +33,7 @@ tmpfs                   388.1M     16.0K    388.1M   0% /tmp
 /dev/block/mmcblk0p10
                          13.2G    161.7M     13.1G   1% /sdcard
 /dev/block/mmcblk0p9    688.9M     11.7M    677.3M   2% /system
+```
 
 - more info [in postmarket wiki](https://wiki.postmarketos.org/index.php?title=User:Knuxify/Scratchpad&oldid=56232)
 - more info cpu [here](http://web.archive.org/web/20200217083856/linux-exynos.org/wiki/Samsung_Exynos_4412)

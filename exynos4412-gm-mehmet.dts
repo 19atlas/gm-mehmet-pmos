@@ -16,7 +16,7 @@
     chassis-type = "tablet";
 
     chosen {
-        bootargs = "earlycon=exynos4210,0x13820000,115200 console=tty0,115200n8 clk_ignore_unused pd_ignore_unused";
+        bootargs = "earlycon=exynos4210,0x13820000,115200 console=tty0,115200n8 clk_ignore_unused pd_ignore_unused regulator_ignore_unused";
         stdout-path = "serial_2:115200n8";
     };
 

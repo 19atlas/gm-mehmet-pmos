@@ -430,6 +430,10 @@
 		samsung,pin-function = <EXYNOS_PIN_FUNC_OUTPUT>;
 		samsung,pin-pud = <EXYNOS_PIN_PULL_NONE>;
 	};
+	gpio_keys: gpio-keys-pins {
+		samsung,pins = "gpx1-3", "gpx3-4", "gpx3-3";
+		samsung,pin-pud = <EXYNOS_PIN_PULL_NONE>;
+	};
 
 };
 

@@ -2,6 +2,8 @@
 PostmarketOS configuration files for General Mobile E-tab 4/willow
 https://wiki.postmarketos.org/wiki/Porting_to_a_new_device
 
+for unlocking flashing ` fastboot oem unlock willow_2013`
+
 # files
 - `build.prop` is came from rom
 - `exynos4412-mehmet.dts` is for mainline kernel (WIP)

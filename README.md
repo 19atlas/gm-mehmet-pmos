@@ -35,5 +35,16 @@ tmpfs                   388.1M     16.0K    388.1M   0% /tmp
 /dev/block/mmcblk0p9    688.9M     11.7M    677.3M   2% /system
 ```
 
+```
+
+
+/* Read GPL2[0],[1],[2],[3] Data Register
+	 * -----------------------------------------------------------------
+	 * VER | ADC3_HW_VER0 | ADC2_HW_VER0 | ADC1_HW_VER0 | ADC0_HW_VER0 |
+	 * -----------------------------------------------------------------
+	 * VE1 |       0      |       1      |       1      |       1      | //7
+```
+
+
 - more info [in postmarket wiki](https://wiki.postmarketos.org/index.php?title=User:Knuxify/Scratchpad&oldid=56232)
 - more info cpu [here](http://web.archive.org/web/20200217083856/linux-exynos.org/wiki/Samsung_Exynos_4412)
